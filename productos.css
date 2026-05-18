@@ -1,0 +1,161 @@
+﻿body {
+  padding: 0 0 2rem;
+}
+
+.productos-destacados,
+.detalle-proyectos {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto 2.5rem;
+  padding: 2rem;
+}
+
+.productos-destacados h2,
+.detalle-proyectos h2 {
+  text-align: center;
+  font-family: 'Comic Sans MS', 'Trebuchet MS', cursive;
+  color: #ff5f98;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 0.8rem;
+}
+
+.productos-destacados > p,
+.proyecto-resumen {
+  text-align: center;
+  color: #6d3455;
+  margin-bottom: 1.5rem;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.3rem;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(255, 240, 246, 0.98));
+  padding: 1rem;
+  border-radius: 26px;
+  border: 1px solid rgba(239, 200, 216, 0.75);
+  box-shadow: 0 14px 26px rgba(140, 61, 101, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 28px rgba(140, 61, 101, 0.18);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 0.9rem;
+}
+
+.card h3 {
+  color: #6d3455;
+  margin-bottom: 0.45rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #82506a;
+  line-height: 1.6;
+  min-height: 4.5rem;
+}
+
+.precio,
+.proyecto-tipo {
+  display: inline-block;
+  margin: 0.8rem 0;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: #fff0f6;
+  color: #ff5f98;
+  font-weight: 700;
+}
+
+.btn-comprar,
+.detalle-link {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff93bf, #ff6ea2);
+  border: none;
+  padding: 0.9rem 1rem;
+  border-radius: 999px;
+  font-size: 0.98rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 10px 18px rgba(255, 110, 162, 0.22);
+}
+
+.btn-comprar:hover,
+.detalle-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 22px rgba(255, 110, 162, 0.28);
+}
+
+.detalle-proyectos {
+  background: linear-gradient(180deg, rgba(255, 244, 249, 0.95), rgba(255, 236, 243, 0.96));
+  border-radius: 30px;
+  border: 1px solid rgba(239, 200, 216, 0.75);
+  box-shadow: 0 14px 26px rgba(140, 61, 101, 0.12);
+}
+
+.detalle-card {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 1.4rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 26px;
+  padding: 1rem;
+  margin-top: 1.4rem;
+  border: 1px solid rgba(239, 200, 216, 0.75);
+}
+
+.detalle-imagen img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 22px;
+}
+
+.detalle-contenido h3 {
+  color: #6d3455;
+  font-size: 1.45rem;
+  margin-bottom: 0.7rem;
+}
+
+.detalle-contenido p {
+  color: #7b4d66;
+  line-height: 1.8;
+  margin-bottom: 0.8rem;
+}
+
+@media (max-width: 760px) {
+  .detalle-card {
+    grid-template-columns: 1fr;
+  }
+
+  .detalle-imagen img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .productos-destacados,
+  .detalle-proyectos {
+    padding: 1.4rem;
+  }
+
+  .card img {
+    height: 200px;
+  }
+}

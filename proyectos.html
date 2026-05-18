@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flor de Azucar | Mis proyectos</title>
+  <link rel="icon" href="./IMG/Imagen1.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./CSS/estilos.css" />
+  <link rel="stylesheet" href="./CSS/productos.css" />
+  <script src="./JAVA/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./index.html#sobre">Sobre mi</a></li>
+        <li><a href="./proyectos.html">Mis proyectos</a></li>
+        <li><a href="https://wa.me/573043687569" target="_blank" rel="noopener noreferrer">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero-carrusel">
+    <div class="carrusel">
+      <div class="imagenes">
+        <img src="./IMG/Imagen5.png" alt="Portafolio creativo" />
+        <img src="./IMG/Imagen6.png" alt="Proyectos personales" />
+        <img src="./IMG/Imagen7.png" alt="Muestras de trabajo" />
+      </div>
+      <div class="imagenes" aria-hidden="true">
+        <img src="./IMG/Imagen5.png" alt="" />
+        <img src="./IMG/Imagen6.png" alt="" />
+        <img src="./IMG/Imagen7.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <section class="categoria-intro">
+    <h2>Mis proyectos</h2>
+    <p>Este apartado está pensado como una presentación completa. Primero puedes mostrar un resumen rápido de tus proyectos y luego, más abajo, explicar cada uno con más detalle sin salir de la misma página.</p>
+  </section>
+
+  <section class="productos-destacados">
+    <h2>Resumen del portafolio</h2>
+    <p class="proyecto-resumen">Aquí va la vista rápida: nombre, tipo de proyecto, imagen y una descripción corta para que la persona entienda de qué trata antes de bajar a leer más.</p>
+    <div class="productos">
+      <article class="card">
+        <img src="./IMG/Imagen5.png" alt="Proyecto web de ejemplo" />
+        <span class="proyecto-tipo">Programación</span>
+        <h3>Nombre de tu proyecto web</h3>
+        <p>Resumen corto del proyecto: qué hace, qué resuelve y por qué lo quieres mostrar en tu portafolio.</p>
+        <a class="btn-comprar detalle-link" href="#detalle-web">Leer explicación</a>
+      </article>
+
+      <article class="card">
+        <img src="./IMG/Imagen6.png" alt="Proyecto de videojuego de ejemplo" />
+        <span class="proyecto-tipo">Videojuego</span>
+        <h3>Nombre de tu videojuego</h3>
+        <p>Resumen corto del juego: idea principal, estilo, mecánica central o etapa en la que se encuentra.</p>
+        <a class="btn-comprar detalle-link" href="#detalle-juego">Leer explicación</a>
+      </article>
+
+      <article class="card">
+        <img src="./IMG/Imagen7.png" alt="Proyecto creativo de ejemplo" />
+        <span class="proyecto-tipo">Personal</span>
+        <h3>Nombre de otro proyecto</h3>
+        <p>Resumen corto de una app, sistema, experimento o proyecto personal que quieras enseñar dentro del portafolio.</p>
+        <a class="btn-comprar detalle-link" href="#detalle-personal">Leer explicación</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="detalle-proyectos">
+    <h2>Explicación de cada proyecto</h2>
+    <p class="proyecto-resumen">Esta parte es para extender la información. Aquí puedes explicar proceso, herramientas, decisiones, retos, resultado final o lo que aprendiste en cada trabajo.</p>
+
+    <article id="detalle-web" class="detalle-card">
+      <div class="detalle-imagen">
+        <img src="./IMG/Imagen5.png" alt="Detalle del proyecto web" />
+      </div>
+      <div class="detalle-contenido">
+        <span class="proyecto-tipo">Programación</span>
+        <h3>Nombre de tu proyecto web</h3>
+        <p>En esta sección puedes contar mejor de qué trata el proyecto, cuál era el objetivo y cómo fue el proceso de desarrollo.</p>
+        <p>Puedes escribir qué tecnologías usaste, qué parte hiciste tú, qué problema resolviste y qué resultado obtuviste al final.</p>
+        <p>También puedes mencionar mejoras futuras, cosas que aprendiste o por qué este proyecto representa bien tu estilo de trabajo.</p>
+      </div>
+    </article>
+
+    <article id="detalle-juego" class="detalle-card">
+      <div class="detalle-imagen">
+        <img src="./IMG/Imagen6.png" alt="Detalle del videojuego" />
+      </div>
+      <div class="detalle-contenido">
+        <span class="proyecto-tipo">Videojuego</span>
+        <h3>Nombre de tu videojuego</h3>
+        <p>Aquí puedes explicar el concepto general del juego, la historia o la experiencia que querías construir.</p>
+        <p>También puedes hablar de las mecánicas, del motor que usaste, de los retos técnicos o visuales y del estado actual del proyecto.</p>
+        <p>Si quieres, esta parte sirve para mostrar cómo piensas el diseño, la jugabilidad y la identidad del proyecto.</p>
+      </div>
+    </article>
+
+    <article id="detalle-personal" class="detalle-card">
+      <div class="detalle-imagen">
+        <img src="./IMG/Imagen7.png" alt="Detalle del proyecto personal" />
+      </div>
+      <div class="detalle-contenido">
+        <span class="proyecto-tipo">Personal</span>
+        <h3>Nombre de otro proyecto</h3>
+        <p>Este bloque te sirve para cualquier otro proyecto: una app, un sistema, una prueba técnica, una idea visual o una propuesta experimental.</p>
+        <p>Puedes explicar la intención del proyecto, cómo lo desarrollaste, qué herramientas usaste y qué te gustaría seguir mejorando.</p>
+        <p>La idea es que toda la presentación quede dentro de esta misma página, sin necesidad de mandar a la persona a otro lugar.</p>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3 class="footer-title">Sigamos en contacto</h3>
+        <p class="subscribe-copy">Si te gusta este mundo artesanal y cute, puedes dejar tu correo para recibir novedades, lanzamientos y más información.</p>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><img src="./IMG/Logo_de_Facebook.png" alt="Facebook" /></a>
+          <a href="#" aria-label="Instagram"><img src="./IMG/Logo_de_ig.png" alt="Instagram" /></a>
+          <a href="https://wa.me/573043687569" target="_blank" rel="noopener noreferrer"><img src="./IMG/Logo_de_what.png" alt="WhatsApp" /></a>
+        </div>
+      </div>
+      <div class="footer-section contact-info">
+        <h3 class="footer-title">Contacto</h3>
+        <span>flordeazucarstudio@gmail.com</span>
+        <a href="https://wa.me/573043687569" target="_blank" rel="noopener noreferrer">WhatsApp directo</a>
+        <span>Muestra tus proyectos con tu mismo estilo visual</span>
+      </div>
+      <div class="footer-section subscribe-form">
+        <h3 class="footer-title">Pon tu correo aquí</h3>
+        <form id="form-suscripcion">
+          <label for="email">Recibe más información</label>
+          <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required />
+          <button type="submit">Quiero suscribirme</button>
+          <p id="mensaje" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+    <p class="footer-note">Flor de Azucar, portafolio creativo con una vista delicada y personal.</p>
+  </footer>
+</body>
+</html>
+
